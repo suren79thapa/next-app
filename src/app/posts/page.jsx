@@ -1,4 +1,6 @@
 import React from "react";
+import { Button } from "../../components/ui/button.jsx";
+import Link from "next/link.js";
 
 export default function Page() {
   return (
@@ -9,6 +11,9 @@ export default function Page() {
         consequatur alias sequi rerum dolor voluptatum. In earum officiis
         eligendi.
       </p>
+      <Button>
+        <Link href={"/posts/110"}>Go to Detail</Link>
+      </Button>
     </div>
   );
 }
